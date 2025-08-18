@@ -1,0 +1,22 @@
+# Node dependencies
+/node_modules/
+
+# Compiled output
+/dist/
+/tmp/
+
+# Angular build cache
+.angular/cache/
+
+# IDE & editor settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System files
+.DS_Store
+Thumbs.db
