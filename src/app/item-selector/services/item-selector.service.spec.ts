@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ItemSelectorService } from './item-selector.service.ts';
+import { ItemSelectorService } from './item-selector.service.js';
 
 describe('ItemSelectorService', () => {
   let service: ItemSelectorService;

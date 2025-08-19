@@ -2,7 +2,7 @@ import { Component, input, inject } from '@angular/core';
 import { Folder,  } from '../item-selector.model';
 import { ItemComponnent } from "../item/item";
 import { SortByPipe } from '../../core/pipes/sort-by-pipe';
-import { ItemSelectorService } from '../services/item-selector.service.ts';
+import { ItemSelectorService } from '../services/item-selector.service';
 
 @Component({
   selector: 'app-folder',

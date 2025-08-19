@@ -1,5 +1,5 @@
 import { inject, Injectable, signal } from '@angular/core';
-import { ItemSelectorResource } from './item-selector.resource.ts';
+import { ItemSelectorResource } from './item-selector.resource.js';
 import { map, Observable } from 'rxjs';
 import { Folder, Item, ItemsListFlat } from '../item-selector.model.js';
 

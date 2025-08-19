@@ -1,6 +1,6 @@
 import { Component, inject, input} from '@angular/core';
 import { Item } from '../item-selector.model';
-import { ItemSelectorService } from '../services/item-selector.service.ts';
+import { ItemSelectorService } from '../services/item-selector.service';
 
 @Component({
   selector: 'app-item',

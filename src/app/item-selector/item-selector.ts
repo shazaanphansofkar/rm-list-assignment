@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, computed, inject, OnInit } from '@angular/core';
 import { take } from 'rxjs';
-import { ItemSelectorService } from './services/item-selector.service.ts.js';
+import { ItemSelectorService } from './services/item-selector.service.js';
 import { FolderComponent } from './folder/folder.js';
 import { SortByPipe } from '../core/pipes/sort-by-pipe.js';
 
