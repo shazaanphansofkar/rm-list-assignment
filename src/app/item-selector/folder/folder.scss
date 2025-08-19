@@ -1,8 +1,12 @@
 .folder {
   display: flex;
-  gap: var(--spacing);
   padding: 8px var(--spacing);
   margin-left: var(--spacing);
+
+  &:hover {
+    background-color: var(--color-hover);
+    cursor: pointer;
+  }
 
   &_label {
     display: flex;

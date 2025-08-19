@@ -1,0 +1,16 @@
+.container {
+    width: 275px;
+    margin: var(--spacing);
+}
+
+.align-right {
+    display: flex;
+    justify-content: end;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 8px;
+    border: var(--border-width) solid var(--color-primary);
+}

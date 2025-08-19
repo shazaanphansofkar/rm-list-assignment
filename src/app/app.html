@@ -1,1 +1,21 @@
-<router-outlet />
+@if(!loading && !error) {
+    <div class="container">
+        <app-item-selector [data]="data()" (itemSelected)="setSelectionsIds($event)"></app-item-selector>
+
+        <div>
+            Selected Items IDs: {{selectedIds}}
+        </div>
+
+        <div class="align-right">
+            <button class="btn-primary" (click)="clearSelection()">Clear Selection</button>
+        </div>
+    </div>
+} @else if (error) {
+    <div class="container">
+        <span>{{error}}</span>
+    </div>
+} @else {
+    <div class="container">
+        <span>Loading...</span>
+    </div>
+}
