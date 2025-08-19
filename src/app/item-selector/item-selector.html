@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="item-selector">
+        @for (folder of (data() | sortBy:'title') ; track folder.id) {
+        <app-folder [data]="folder"></app-folder>
+        }
+    </div>
+
+    <div>
+        Selected Items IDs: {{selectedIds()}}
+    </div>
+
+    <div class="align-right">
+        <button class="btn-primary" (click)="clearSelection()">Clear Selection</button>
+    </div>
+</div>

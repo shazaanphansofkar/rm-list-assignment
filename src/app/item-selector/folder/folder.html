@@ -1,0 +1,26 @@
+<div class="folder">
+    <div>
+        <input (change)="toggleSelection($event)" [checked]="data().isSelected" [indeterminate]="data().isIndeterminante" type="checkbox" />
+    </div>
+    <div class="folder_label" (click)="isOpen = !isOpen">
+        <strong>{{data()?.title}}</strong>
+        <div><span class="chevron" [class.open]="isOpen"></span></div>
+
+    </div>
+</div>
+
+@if (isOpen) {
+<div>
+    @for (child of (data()?.children | sortBy:'title') ; track child.id) {
+    <div class="folder--inner">
+        <app-folder [data]="child"></app-folder>
+    </div>
+    }
+
+    @for (item of (data()?.items | sortBy:'title'); track item.id) {
+    <div class="folder--inner">
+        <app-item [data]="item"></app-item>
+    </div>
+    }
+</div>
+}

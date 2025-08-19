@@ -1,0 +1,31 @@
+.folder {
+  display: flex;
+  gap: var(--spacing);
+  padding: 8px var(--spacing);
+  margin-left: var(--spacing);
+
+  &_label {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 auto;
+  }
+
+  &--inner {
+    margin-left: var(--spacing);
+  }
+}
+
+.chevron {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg); // right arrow
+  transition: transform 0.2s ease;
+  margin-left: 5px;
+}
+
+.chevron.open {
+  transform: rotate(225deg); // down arrow
+}
